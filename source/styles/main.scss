@@ -148,15 +148,14 @@ section{
         
 
         &.solid{
-            a{
-                &::before {
-
-                    color: #B18009
-                }
-            }
-
-
+            
+            
             &.warn{
+                a{
+                    &::before {
+                        color: #B18009
+                    }
+                }
                 background: #FFC12D;
             }
             &.warn::before{
@@ -164,6 +163,11 @@ section{
             }
 
             &.cancel{
+                a{
+                    &::before {
+                        color: #D52E13
+                    }
+                }
                 background: #FEB1A4;
 
             }
@@ -175,7 +179,20 @@ section{
                 border: 7px solid #7BC200;
             }
             &.success{
+                a{
+                    &::before {
+                        color: #558502
+                    }
+                }
                 background: #A7EC2F;
+            }
+            &.info{
+                a{
+                    &::before {
+                        color: #0787D4
+                    }
+                }
+                background: #6FD9FC
             }
             &.info::before{
                 content: "\f0e7"; 
@@ -186,22 +203,21 @@ section{
 
     
             &.disclaimer{
+                a{
+                    &::before {
+                        color: #5B568E
+                    }
+                }
                 width: unset;
                 flex:1;
-               
+               background: #AACDF6
             }
             
             
             &.disclaimer::before{
                 content: '\f129';
                 
-                background:   #A39CDC;
-               
-                color:  #5B568E;
-                border: 7px solid   #8781BD;
-               
-               
-               
+                background:   #AACDF6;
             }
             div{
                 p{
