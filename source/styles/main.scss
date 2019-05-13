@@ -1,5 +1,5 @@
 $color-1: #21C2F8;
-$color-2: #FFF;
+$color-2: #FFFFFF;
 $color-3: #222533;
 $color-4: #F39705;
 $color-5: #E25611;
@@ -19,38 +19,38 @@ $IconSize: 24px;
 
 $titleColor:#2C3E50;
 $textColor: #A1B1BC;
+
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     padding-top: 50px;
     padding-left: 50px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
-h3{
+h3 {
+    margin-bottom: 48px;
     font-family: $LightFF;
     font-size: 30px;
-    margin-bottom: 48px;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
 }
 
-section{
-    border: 1px solid #E2E6E7;
-    border-radius: 10px;
-    margin: 15px;
-    padding: 57px 50px;
+section {
     display: flex;
     width: fit-content;
-
+    margin: 15px;
+    padding: 57px 50px;
+    border: 1px solid #E2E6E7;
+    border-radius: 10px;
     
     a {
         text-decoration: none;
@@ -62,15 +62,12 @@ section{
             font-weight: 900;
             font-size: 14px;
             color:#CFD2D3;
-           
         }
     }
 
-
-    &.alertBox {
+    &.alert {
 
         &::before {
-   
             font-family: FontAwesome;
             box-sizing: content-box;
             height: 50px;
@@ -82,154 +79,147 @@ section{
             justify-content: center;
             font-size: $IconSize;
             font-weight: 900;
-
         }
-        &.warn::before{
+        
+        &.warn::before {
             content: "\f12a"; 
             background: #FFC12D;
             color:#A47503;
             border: 7px solid #F9B718;
         }
-        &.cancel::before{
+        
+        &.cancel::before {
             content: "\f00d"; 
             background: #FD7761;
             color:#D52E13;
             border: 7px solid   #F55C43;
         }
-        &.info::before{
+
+        &.info::before {
             content: "\f0e7"; 
             background:  #6FD9FC;
             color:#0787D4;
             border: 7px solid #47B4F6;
         }
-        &.success::before{
+
+        &.success::before {
             content: "\f00c"; 
             
         }
 
-        &.disclaimer{
+        &.disclaimer {
             width: unset;
             flex:1;
            
         }
         
-        
-        &.disclaimer::before{
+        &.disclaimer::before {
             content: '\f129';
-            
             background:   #A39CDC;
-           
             color:  #5B568E;
             border: 7px solid   #8781BD;
-           
-           
-           
         }
-     
         
-        div{
+        div {
             margin-left: 36px;
             flex: 1;
-            h4{
+            h4 {
                 font-family: $BlackFF;
                 font-size: 14px;
                 color: $titleColor;
                 letter-spacing: 2px;
-                margin-bottom: 20px
+                margin-bottom: 20px;
             }
                
-            p{
+            p {
                 font-family: $FF;
                 color: $textColor;
             }
-
-
         }
-        
 
-        &.solid{
-            
-            
-            &.warn{
+        &.solid {
+
+            &.warn {
+
                 a{
                     &::before {
-                        color: #B18009
+                        color: #B18009;
                     }
                 }
+
                 background: #FFC12D;
             }
+
             &.warn::before{
                 border: 7px solid #C89210;
             }
 
-            &.cancel{
+            &.cancel {
                 a{
                     &::before {
-                        color: #D52E13
+                        color: #D52E13;
                     }
                 }
                 background: #FEB1A4;
 
             }
-            &.cancel::before{
+
+            &.cancel::before {
                 background: #FEB1A4;
             }
-            &.success:before{
+            
+            &.success:before {
                 color:#558502;
                 border: 7px solid #7BC200;
             }
-            &.success{
+
+            &.success {
                 a{
                     &::before {
-                        color: #558502
+                        color: #558502;
                     }
                 }
                 background: #A7EC2F;
             }
-            &.info{
+
+            &.info {
                 a{
                     &::before {
-                        color: #0787D4
+                        color: #0787D4;
                     }
                 }
-                background: #6FD9FC
+                background: #6FD9FC;
             }
-            &.info::before{
+
+            &.info::before {
                 content: "\f0e7"; 
                 background:  #6FD9FC;
                 color:#0787D4;
                 border: 7px solid #47B4F6;
             }
-
     
-            &.disclaimer{
+            &.disclaimer {
                 a{
                     &::before {
-                        color: #5B568E
+                        color: #5B568E;
                     }
                 }
                 width: unset;
                 flex:1;
-               background: #AACDF6
+               background: #AACDF6;
             }
             
-            
-            &.disclaimer::before{
+            &.disclaimer::before {
                 content: '\f129';
                 
                 background:   #AACDF6;
             }
-            div{
-                p{
-                    color:#2C3E50
+
+            div {
+                p {
+                    color:#2C3E50;
                 }
-
             }
-         
         }
-
-
     }
-
 }
-
